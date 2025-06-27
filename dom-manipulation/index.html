@@ -9,16 +9,19 @@
 
   <h1>Dynamic Quote Generator</h1>
 
-  <!-- Category Filter -->
+  <!-- Sync Notification Area -->
+  <div id="notification" style="background-color: #ffffcc; padding: 10px; display: none;"></div>
+
+  <!-- Filter by Category -->
   <label for="categoryFilter">Filter by Category:</label>
   <select id="categoryFilter" onchange="filterQuotes()">
     <option value="all">All Categories</option>
   </select>
 
-  <!-- Display Area -->
+  <!-- Quote Display -->
   <div id="quoteDisplay"></div>
 
-  <!-- Show New Quote Button -->
+  <!-- Show Random Quote -->
   <button id="newQuote">Show New Quote</button>
 
   <!-- Add New Quote -->
@@ -28,18 +31,19 @@
     <button id="addQuote">Add Quote</button>
   </div>
 
-  <!-- Export Quotes Button -->
+  <!-- Export & Import -->
   <div>
     <button id="exportQuotes">Export Quotes</button>
-  </div>
-
-  <!-- Import Quotes File Input -->
-  <div>
     <label for="importQuotes">Import Quotes (.json):</label>
     <input type="file" id="importQuotes" accept=".json">
   </div>
 
-  <!-- Script -->
+  <!-- Manual Server Sync -->
+  <div>
+    <button id="manualSync">Sync with Server</button>
+  </div>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
